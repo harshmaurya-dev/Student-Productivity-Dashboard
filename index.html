@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Productivity Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>Student Dashboard</h1>
+
+<div class="card">
+<h2>Today's Task</h2>
+
+<input id="taskInput" placeholder="Add new task">
+<button onclick="addTask()">Add</button>
+
+<ul id="taskList"></ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>Quick Notes</h2>
+
+<textarea id="notes" placeholder="Write your notes..."></textarea>
+
+<button onclick="saveNotes()">Save Notes</button>
+
+</div>
+
+
+<div class="card">
+<h2>Study Progress</h2>
+
+<div class="progress">
+<div id="bar"></div>
+</div>
+
+<p id="count">0 Tasks Completed</p>
+
+</div>
+
+
+</div>
+
+
+<script src="brain.js"></script>
+
+</body>
+</html>
